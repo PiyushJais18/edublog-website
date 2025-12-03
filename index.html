@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EduBlog – Technology</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; }
+    header, footer { padding: 1rem; background: #222; color: #fff; }
+    main { display: grid; grid-template-columns: 1fr; gap: 1rem; padding: 1rem; }
+    @media (min-width: 800px) { main { grid-template-columns: 2fr 1fr; } }
+    h2 { margin: 0.2rem 0; color: #e8b11a; }
+    .post { padding: 1rem; border: 1px solid #eee; }
+    .meta { color: #dd0d0d; font-size: 0.9rem; }
+    .tag { display: inline-block; margin-right: 0.5rem; color: #1a73e8; }
+    aside { padding: 1rem; border: 1px solid #eee; }
+    nav a { color: #c5c0c0; margin-right: 1rem; text-decoration: none; }
+    label { display: block; margin: 0.5rem 0 0.2rem; }
+    input, textarea, select { width: 100%; padding: 0.5rem; }
+    button { margin-top: 0.5rem; padding: 0.5rem 1rem; background: #1a73e8; color: #fff; border: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EduBlog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Technology</a>
+      <a href="#">Health</a>
+      <a href="#">Finance</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article class="post">
+        <h2>Getting started with AI in education</h2>
+        <p class="meta">Category: Technology • Tags:
+          <span class="tag">AI</span><span class="tag">EdTech</span><span class="tag">Basics</span>
+        </p>
+        <p>AI can personalize learning, automate grading, and provide insights. Here’s how to start safely and effectively.</p>
+      </article>
+
+      <article class="post">
+        <h2>Secure cloud practices for students</h2>
+        <p class="meta">Category: Technology • Tags:
+          <span class="tag">Cloud</span><span class="tag">Security</span><span class="tag">Tips</span>
+        </p>
+        <p>Use strong passwords, enable MFA, and understand shared responsibility to keep your data safe.</p>
+      </article>
+
+      <section class="post" id="comments">
+        <h2>Comments</h2>
+        <form>
+          <label>Name</label>
+          <input type="text" required />
+          <label>Email</label>
+          <input type="email" required />
+          <label>Comment</label>
+          <textarea rows="4" required></textarea>
+          <label>Tags (optional)</label>
+          <select>
+            <option>AI</option>
+            <option>Security</option>
+            <option>Cloud</option>
+          </select>
+          <button type="submit">Post comment</button>
+        </form>
+        <div class="meta" style="margin-top:0.5rem;">Note: This is a demo form; add backend to save comments.</div>
+      </section>
+    </section>
+
+    <aside>
+      <h2>Categories</h2>
+      <ul>
+        <li>Technology</li>
+        <li>Health</li>
+        <li>Finance</li>
+      </ul>
+
+      <h2>Tags</h2>
+      <p>
+        <span class="tag">AI</span>
+        <span class="tag">EdTech</span>
+        <span class="tag">Cloud</span>
+        <span class="tag">Security</span>
+        <span class="tag">Tips</span>
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    © 2025 EduBlog • Simple educational blog demo
+  </footer>
+</body>
+</html>
